@@ -1,62 +1,62 @@
-#### Video Tutorial of this project
-https://youtu.be/SQ4A7Q6_md8
-<br><br>
+# Realtime Chat Application
 
-#### Getting the files
-Download zip file<br> 
-or <br>
-git clone command (need git to be installed) and remove git folder afterwards
-```
-git clone https://github.com/andyjud/django-starter.git . && rm -rf .git
-```
-<br><br><br>
+This is a realtime chat application built with Django and Tailwind CSS.
 
-## Setup
+## Features
 
-#### - Create Virtual Environment
-###### # Mac
+- Realtime messaging
+- User authentication
+- Online user count
+- Responsive design
+
+## Prerequisites
+
+- Python 3.x
+- Node.js
+- npm (Node Package Manager)
+
+## Setup and Run Locally
+
+Follow these steps to set up and run the project locally:
+
+Clone the repository:
 ```
-python3 -m venv venv
+git clone https://github.com/arpitajana1220/Chat-app.git
+cd Chat-app
+
+```
+
+Create a virtual environment:
+```
+python -m venv venv
+```
+Activate the virtual environment:
+On Windows:
+```
+venv\Scripts\activate
+```
+On macOS/Linux:
+```
 source venv/bin/activate
 ```
-
-###### # Windows
+Install the required Python packages:
 ```
-python3 -m venv venv
-.\venv\Scripts\activate.bat
-```
-
-<br>
-
-#### - Install dependencies
-```
-pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
-<br>
-
-#### - Migrate to database
+Run database migrations:
 ```
 python manage.py migrate
+```
+Create a superuser:
+```
 python manage.py createsuperuser
 ```
-
-<br>
-
-#### - Run application
+Run the development server:
 ```
 python manage.py runserver
 ```
 
-<br>
+Access the application: Open your web browser and go to http://127.0.0.1:8000.
 
-#### - Generate Secret Key ( ! Important for deployment ! )
-```
-python manage.py shell
-from django.core.management.utils import get_random_secret_key
-print(get_random_secret_key())
-exit()
-```
-
-
+License
+This project is licensed under the MIT License.
