@@ -1,8 +1,6 @@
 {% extends 'layouts/blank.html' %}
 
 {%block content%}
-
-
 <wrapper class="block max-w-2xl mx-auto my-5 px-6">
 
     <div id="chat_window" class="h-[45rem] flex flex-col bg-gray-800 rounded-2xl shadow-2xl relative p-1">
@@ -47,9 +45,11 @@
 <footer class="bg-gray-800 text-white text-center p-6 mt-2">
     <p>&copy; 2025 Chat App. All rights reserved.</p>
 </footer>
+
 {% endblock %}
 
 {% block javascript %}
+
 <script>
 
     function scrollToBottom() {
@@ -60,4 +60,5 @@
     scrollToBottom();
 
 </script>
+
 {% endblock %}

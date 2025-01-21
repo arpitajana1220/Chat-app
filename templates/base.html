@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Django Template">
-    <title>Project Title</title>
+    <title>Chat app</title>
     <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="https://unpkg.com/htmx.org@2.0.2"></script>
@@ -17,10 +17,12 @@
     {% django_htmx_script %}
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+     <style type="text/tailwindcss">
         [x-cloak] { 
             display: none !important; 
         }
+
         h1 {
             @apply text-4xl font-bold mb-4
         }
@@ -114,7 +116,7 @@
             @apply rounded-full bg-gray-300 p-1.5
         }
 
-    </style>
+     </style>
 
 </head>
 
